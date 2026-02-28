@@ -3,59 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <title>My Biodata</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .container {
-            width: 700px;
-            margin: 40px auto;
+            width: 800px;
+            max-width: 95%;
             background-color: #ffffff;
-            padding: 20px;
-            border: 1px solid #ccc;
+            border-radius: 12px;
+            padding: 30px 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
         }
 
         h1 {
             text-align: center;
+            margin-bottom: 10px;
             color: #333;
         }
 
-        h2 {
-            color: #444;
-            border-bottom: 1px solid #ccc;
+        .subtitle {
+            text-align: center;
+            color: #777;
+            margin-bottom: 30px;
+            font-size: 14px;
         }
 
-        p {
-            font-size: 14px;
-            line-height: 1.6;
+        .photo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .photo img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #667eea;
+        }
+
+        h2 {
+            margin-top: 30px;
+            color: #444;
+            border-left: 5px solid #667eea;
+            padding-left: 10px;
+            font-size: 20px;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
+            margin-top: 15px;
         }
 
         td {
-            padding: 8px;
-            border: 1px solid #ccc;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            font-size: 15px;
         }
 
         .label {
-            font-weight: bold;
+            font-weight: 600;
+            color: #555;
             width: 30%;
         }
 
-        .photo {
-            text-align: center;
-            margin-bottom: 20px;
+        p {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #555;
+            margin-top: 10px;
         }
 
-        .photo img {
-            width: 150px;
-            height: 150px;
-            border: 1px solid #000;
+        .skills span {
+            display: inline-block;
+            background-color: #f1f3ff;
+            color: #333;
+            padding: 6px 12px;
+            margin: 6px 6px 0 0;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 13px;
+            color: #777;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
         }
     </style>
 </head>
@@ -63,9 +120,10 @@
 
 <div class="container">
     <h1>Biodata</h1>
+    <div class="subtitle">Personal & Professional Information</div>
 
     <div class="photo">
-        <img src="krish.jpeg" alt="My Photo">
+        <img src="krish.jpeg" alt="Krish Ghori">
     </div>
 
     <h2>Personal Details</h2>
@@ -94,21 +152,31 @@
 
     <h2>Education</h2>
     <p>
-        Bachelor of Engineering in Computer Engineering.<br>
-        Currently learning web development and programming.
+        Bachelor of Engineering in Computer Engineering.  
+        Actively learning modern web development and software programming.
     </p>
 
     <h2>Skills</h2>
-    <p>
-        HTML, CSS, JavaScript<br>
-        C, C++, Java, Python<br>
-        Basic React.js , Backend
-    </p>
+    <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>C</span>
+        <span>C++</span>
+        <span>Java</span>
+        <span>Python</span>
+        <span>React.js (Basic)</span>
+        <span>Backend Basics</span>
+    </div>
 
     <h2>Declaration</h2>
     <p>
-        I hereby declare that the above information is true to the best of my knowledge.
+        I hereby declare that the above information is true and correct to the best of my knowledge and belief.
     </p>
+
+    <div class="footer">
+        © 2026 | Designed by Krish Ghori
+    </div>
 </div>
 
 </body>
